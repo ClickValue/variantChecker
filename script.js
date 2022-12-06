@@ -1,4 +1,4 @@
-// optimizely -> Key = , variation =
+
 try {
     if (typeof optimizely !== 'undefined') {
         var state = optimizely.get("state");
@@ -10,7 +10,7 @@ try {
     }
 } catch (e) {}
 
-// qubit -> experienceId = experimentId, variationMasterId = variant Id
+
 try {
     if (typeof __qubit !== 'undefined') {
         qubit.uv.events.forEach(u => {
@@ -21,8 +21,8 @@ try {
     }
 } catch (e) {}
 
+
 try {
-    // abtasty => variationName = experiment name + variant
     if (ABTasty !== 'undefined') {
         let abTests = window.ABTasty.getTestsOnPage();
         for (const [key, value] of Object.entries(abTests)) {
@@ -34,7 +34,6 @@ try {
 try {
     if (typeof google_optimize !== 'undefined') {
         function gtag() { dataLayer.push(arguments) }
-        // optimize -> name = experimentID, value = variant number (0 = control etc.)
         gtag('event', 'optimize.callback', {
             callback: (value, name) => console.log('Experiment: ' + name + ' VariantID: ' + value)
         });
