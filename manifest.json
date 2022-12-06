@@ -1,8 +1,8 @@
 {
-    "name": "Variation Checker 3",
+    "name": "ClickValue Variant Checker",
     "version": "1",
     "manifest_version": 3,
-    "description": "Checks variants!",
+    "description": "Extension to quickly see experiment ID and variant ID!",
     "permissions": [
         "activeTab",
         "scripting",
