@@ -6,7 +6,7 @@ Chrome extension for checking the experiment and variant
    ```
    git clone git@github.com:ClickValue/variantChecker.git
    ```
-2. Navigate to Chrome's Extension page: chrome://extensions/
+2. Navigate to Chrome's Extension page: <chrome://extensions/>
 3. Click the "Load unpacked" button in the upper left corner.
 4. Navigate to the variantChecker folder you've cloned.
 5. Press the "Details" button in the Variant Checker extension.
