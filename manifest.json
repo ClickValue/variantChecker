@@ -1,0 +1,34 @@
+{
+    "name": "Variation Checker 3",
+    "version": "1",
+    "manifest_version": 3,
+    "description": "Checks variants!",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "webRequest"
+    ],
+    "action": {},
+    "devtools_page": "devtools.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "inject.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "script.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
