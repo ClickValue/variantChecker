@@ -18,6 +18,6 @@ After installing the Variant Checker, the extension will execute a content scrip
 Make sure to double check all the variants in the A/B testtool.
 
 Example:
-If you have an experiment running with one Copy Control and one Variant, the Copy Control could be Variant 1 and Variant 1 Variant 2.
+If you have an experiment running with four total variants: Control, Variant 1, Variant 2 and the Copy Control. The Variant IDs will be Control 0, Variant 1 1, Variant 2 2 and the Copy (!) Control 3.
 
 To disable the extension, turn off the extension inside Chrome's extension menu.
